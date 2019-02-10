@@ -49,6 +49,7 @@ public class TheFrame extends JFrame {
    JButton setCourse;
    JButton print;
    JButton exit;
+  
  
    public TheFrame() {
  setIconImage(Toolkit.getDefaultToolkit().getImage(TheFrame.class.getResource("rainbow.JPG")));
