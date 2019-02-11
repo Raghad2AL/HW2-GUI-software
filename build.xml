@@ -1,0 +1,23 @@
+<project default = "compile">
+<property name="src.java.dir" location="C:\Users\Pascal\Documents\Java Codes\HW2\src"/>
+<property name="result.dir" location="C:\Users\Pascal\Documents\Java Codes\HW2\target"/>
+<property name="result.javaclasses.dir" location="${result.dir}/classes"/>
+<property name="result.jar.file" location="C:\Users\Pascal\Documents\Java Codes\HW2\mypro.jar"/>
+
+<target name="compile">
+<mkdir dir="${result.javaclasses.dir}"/>
+<javac srcdir="${src.java.dir}" destdir="${result.javaclasses.dir}" debug="true" includeantruntime="false">
+</javac>
+</target>
+
+<target name="jar" depends="compile">
+   <jar destfile="${result.jar.file}">
+   <fileset dir="${result.javaclasses.dir}">
+   </fileset>
+   </jar>
+   </target>
+   </project>
+
+
+
+
